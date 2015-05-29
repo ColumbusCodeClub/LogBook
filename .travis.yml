@@ -1,8 +1,10 @@
 language: java
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 deploy:
   provider: heroku
-  api_key: "a543eeec-1292-4b02-9d17-f75a9ac3de3f"
+  api_key:
+    secure: VeAjlmTfB58Fk64M9cCfY/GJP5VxDJSQjuNUt2N+yYb4wCXf4xPg0ZPKoJxdYaOEJ4XFE2W7xuDi8LaqbG9iqALieKtrNYOi8aMpEblJVh4n+tbJscTslGuqLrgceJpqhCqKU3+jEhk0p5MzEhscUiiKFBKnHMHROaHeF26J5MYes5Z+a9fZ2VeyI3siXCHxbnsDZW1JLcSKZ0EOzRMwLZ1JAuApg1PrlZvu+2mPaspUsAak3oc6HAqnK3sbGEAklRZimyqAw63ckuU0XheB7peEVaA4oO2hiU0/S3MBBn/KAkxbQ1uFOAHtiF8RutWpZSGCpTuXDxoZBozl7WKdss4XRaClovNJ4/oZpJVfQoN8yWIBDI0bC5ZkJjErPsAP9yaPMmiCmMrXfynMCXFwLDVtxWXzzI/ElOd76rMs65Owo0WExFDTr63NuTmF5Uw97CkUlmQyqOvQf+nZyYXRQ+O8lzXh4uaw+1BS7cMI+wEA7ZFZLaWg6youMx8wefvH6a2bUoXs5afsf02h9mtaZaTDTwxkCvmCmiw3wZ/fAMsxhvrRStZP48PrnI2ATt4P79P7rYKaB3gsNXlljHC5O53AcqJiBqwwCMtc45IeYGV1daF7A1bpPuybqRkMZljHevUdQC+rJihIkeGgBEOVoqZbaityWTBdVRgSGpPYpwU=
   app: ccc-log-book
+  on:
+    repo: ColumbusCodeClub/LogBook
