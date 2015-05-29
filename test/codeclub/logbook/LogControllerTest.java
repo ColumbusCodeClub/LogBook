@@ -26,7 +26,7 @@ public class LogControllerTest {
 		underTest.log("firstMessage");
 		ModelAndView result = underTest.log("secondMessage");
 		
-		assertThat(result.getModel().get("message"), is("firstMessage</br>secondMessage</br>"));
+		assertThat((String) result.getModel().get("message"), is("firstMessage</br>secondMessage</br>"));
 	}
 	
 	@Test
